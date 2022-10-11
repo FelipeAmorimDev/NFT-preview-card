@@ -1,0 +1,16 @@
+body{
+  font-family: 'Outfit', sans-serif;
+  color:#8bacda;
+  background-color: #0D192B;
+  margin: 0px 20px;
+}
+h1,p{
+  margin:0;
+  padding: 0;
+}
+p{
+  font-size: 18px;
+}
+.texto-copy > span{
+  color:#8bacda
+}

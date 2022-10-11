@@ -1,0 +1,113 @@
+.main{
+  display: grid;
+  max-width: 300px;
+  background-color: #14253D;
+  padding: 30px;
+  border-radius: 20px;
+  gap:30px;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.img{
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.image{
+  background-image: url("../../images/image-equilibrium.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+}
+.image-layer{
+  
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  
+}
+.image-layer:hover{
+  background-image: url("../../images/icon-view.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: hsl(178, 100%, 50%);
+  opacity: 0.5;
+}
+.title-nft{
+  color: #f4f4f4;
+  font-size: 1.3rem;
+}
+.title-nft:hover{
+  color: hsl(178, 100%, 50%);
+ 
+}
+.info-content{
+  display: grid;
+  gap: 10px;
+}
+.info-nft{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+.info-nft span:first-child{
+  color:hsl(178, 100%, 50%);
+  position: relative;
+}
+.info-nft span:last-child{
+  position: relative;
+}
+.info-nft span:first-child::before{
+  content: "";
+  width: 11px;
+  height: 18px;
+  display: inline-block;
+  background-image: url("../../images/icon-ethereum.svg");
+  padding-right:6px ;
+  background-repeat: no-repeat;
+}
+.info-nft span:last-child:before{
+  content: "";
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  background-image: url("../../images/icon-clock.svg");
+  padding-right:5px ;
+  background-repeat: no-repeat;
+ }
+.copy-content{
+  display: flex;
+  align-items: center;
+  gap:15px;
+ }
+
+.copy-content img{
+  width: 35px;
+  border: 1px solid white;
+  border-radius: 30px;
+}
+
+.texto-copy span{
+  color:#f4f4f4;
+}
+
+.texto-copy span:hover{
+  color:hsl(178, 100%, 50%);
+}
+
+@media (max-width:850px){
+  .main{
+    left: 0%;
+    position: initial;
+    transform: initial;
+    margin: 20px auto;
+    }
+}
